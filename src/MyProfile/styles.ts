@@ -1,5 +1,6 @@
 import {ScaledSheet} from 'react-native-size-matters'
 import {Dimensions} from 'react-native';
+import colors from '../../styles/colors';
  const styles = ScaledSheet.create({
     container:{
         backgroundColor:"white",
@@ -8,18 +9,105 @@ import {Dimensions} from 'react-native';
         flexDirection:"column",
         alignItems:"center",
         paddingHorizontal:16,
-        gap:32
+        gap:10
+    },
+    FirstContainer:{
+      width:"100%",
+      height:"100%"
+    },
+    BackContainer:{
+        width:"100%",
+        height:40,
+        display:'flex',
+        justifyContent:"center",
+    },
+    ImageView:{
+      display:"flex",
+      height:"100%",
+      width:"100%",
+      flexDirection:"column",
+      justifyContent:"center",
+      alignItems:"center",
+      gap:6
+    },
+    Image:{
+        width:50,
+        height:50,
+        
+    },
+    TextTakePic:{
+      fontSize:14,
+      fontWeight:"600",
+      color:"#2F2F2F"
+    },
+    TextProfile:{
+      fontSize:26,
+      fontWeight:"700",
+      color:colors.CommonBlackColour,
+      textAlign:"center"
+    },
+    TextHeading:{
+      fontSize:14,
+      fontWeight:"500",
+      color:colors.CommonBlackColour,
+      textAlign:"center"
     },
     image_container:{
-       marginTop:10,
-       width:150,
-       height:150,
-       borderRadius:360,
-       overflow:"hidden"
+       marginTop:13,
+       marginBottom:32,
+       width:120,
+       height:120,
+       borderRadius:15,
+       overflow:"hidden",
+       backgroundColor:colors.ProfileWhite,
+       display:"flex",
+       alignSelf:"center" 
     },
-    content_container:{
-        width:"100%",
-        height:"auto"
+    PhoneNoContainer:{
+      display:"flex",
+      flexDirection:"row",
+      alignItems:"center",
+      justifyContent:"space-between"
+    },
+    BloodGroupContainer:{
+      display:"flex",
+      flexDirection:"row",
+      alignItems:"center",
+      justifyContent:"space-between",
+      marginBottom:5
+    },
+    EmergencyContactContainer:{
+      marginBottom:13,
+      width:"100%",
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-between"
+    },
+    EmergencyContact:{
+      fontWeight:"400",
+      fontSize:14,
+      color:"#111111"
+    },
+    SelectFromContact:{
+      fontWeight:"500",
+      fontSize:13,
+      textAlign:"right",
+      textDecorationLine:"underline",
+      color:colors.ProfileSelectFromContact
+    },
+    ButtonContainer:{
+      height:60,
+      justifyContent:"center",
+      alignItems:"center",
+      marginBottom:30
+    },
+    touchableObacity:{
+      width:"100%",
+      height:"100%"
+    },
+    image100:{
+     width:"100%",
+     height:"100%"
     }
 
  })

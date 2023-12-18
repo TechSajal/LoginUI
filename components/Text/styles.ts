@@ -1,41 +1,25 @@
 import {ScaledSheet} from 'react-native-size-matters'
-import {Dimensions} from 'react-native';
+import colors from '../../styles/colors';
 
  const styles = ScaledSheet.create({
     container:{
-       width:"100%",
+      width:"100%",
        display:"flex",
        flexDirection:"row",
-       alignItems:"center",
-       marginBottom:16,
-       gap:10
-
-       
+       justifyContent:"space-between",
+       marginBottom:13, 
     },
-    container_Icon:{  
-      display:"flex",
-      flexDirection:"row",
-      alignItems:"center",
-      justifyContent:"space-between",
-      flex:1,
-      
-    },
-    icon:{
-        marginHorizontal:5,
-        width:22,
-        height:22
-
-      },
     font_bold:{
-        fontWeight:"bold",
-        color:"black",
-        fontSize:20
+        fontWeight:"500",
+        color:colors.CommonBlackColour,
+        fontSize:14,
+        
     },
     font_content:{
         flex:1,
         display:"flex",
         flexWrap:"wrap",
-       color:"black",
+       color:colors.CommonBlackColour,
       fontSize:18,
     }
  })

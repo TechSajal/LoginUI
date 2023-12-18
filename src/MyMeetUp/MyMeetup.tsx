@@ -65,6 +65,7 @@ const MyMeetup = ({navigation}) => {
            </View>
            <View style={styles.NoOfPeopleContainer}>
                 <DropDown
+                  minWidth={170}
                   IsHeadingThere={true}
                   heading="No of People"
                   data={NoOfPeople}
@@ -73,6 +74,7 @@ const MyMeetup = ({navigation}) => {
                   displayvalue={displayPeopleValue}
                 />
                  <DropDown
+                  minWidth={170}
                   IsHeadingThere={true}
                   heading="Theme"
                   data={theme}
@@ -89,6 +91,7 @@ const MyMeetup = ({navigation}) => {
                   heading="Date"
                 />
                 <DropDown
+                  minWidth={170}
                   IsHeadingThere={true}
                   heading="Time"
                   data={StartTime}

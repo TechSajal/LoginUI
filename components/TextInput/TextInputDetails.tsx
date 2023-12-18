@@ -2,7 +2,7 @@ import {View, Text, Keyboard, TouchableOpacity} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {TextInput as TextInputRN} from 'react-native';
-const TextInputDetails = ({ShowErrorOrNot,errorsize,IsSelectFromContact,IsHeadingThere,heading,error, isnumeric, title, infm, setinfm,ispassword}) => {
+const TextInputDetails = ({ShowErrorOrNot,errorsize,IsSelectFromContact,IsHeadingThere,heading,error, isnumeric, title, infm, setinfm,ispassword,isdissable}) => {
   return (
     <View style={styles.maincontainer}>
       <View style={styles.secondcontainer}>

@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler'
 import React from "react";
 import MyStack from "./Stack";
 import * as eva from '@eva-design/eva';

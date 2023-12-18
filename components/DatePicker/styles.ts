@@ -1,4 +1,6 @@
 import {ScaledSheet} from 'react-native-size-matters'
+import colors from '../../styles/colors'
+import { theme } from '../Helper/data'
 
  const styles = ScaledSheet.create({
     icon:{
@@ -13,17 +15,18 @@ import {ScaledSheet} from 'react-native-size-matters'
         fontWeight:"500",
         fontSize:14,
         lineHeight:20,
-        color:"#454C52",
+        color:colors.Heading,
         marginTop:24
       },
       error:{
         marginLeft:8,
-        color:'red',
+        color:colors.ErrorText,
         fontSize:14
       },
       datepicker:{
           minWidth:171,
-          height:44
+          height:44,
+          color:"black"
       }
  })
 
